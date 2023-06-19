@@ -47,10 +47,7 @@ resource "aws_instance" "blog" {
 module "blog_sg" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "4.13.0"
-<<<<<<< HEAD
-=======
   name    = "blog_new"
->>>>>>> parent of 7cfde43 (Clean up resources in favor of module for security group)
 
   name   = "blog"
   vpc_id = module.vpc.public_subnets[0]
