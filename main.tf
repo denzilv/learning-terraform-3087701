@@ -48,7 +48,7 @@ module "blog_alb" {
   source  = "terraform-aws-modules/alb/aws"
   version = "~> 8.0"
 
-  name = "my_alb"
+  name = "my-alb"
 
   load_balancer_type = "application"
 
